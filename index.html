@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dhifulloh Dhiya Ulhaq — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="theme-color" content="#0b0b0b">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">
+        <img src="assets/avatar.png" alt="Dhifulloh" class="avatar">
+        <div>
+          <h1>Dhifulloh Dhiya Ulhaq</h1>
+          <p class="tagline">AI Enthusiast · Data Protection Intern · Bangkit Graduate</p>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Building AI that bridges business and tech.</h2>
+      <p>IS undergraduate at Telkom University · Bandung, Indonesia</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="#projects">See Projects</a>
+        <a class="btn btn-ghost" id="open-chat">Ask my AI about me →</a>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section id="about" class="section container"></section>
+    <section id="experience" class="section container"></section>
+    <section id="projects" class="section container"></section>
+
+    <section id="contact" class="section container">
+      <h3>Contact</h3>
+      <ul class="list">
+        <li>📧 <a href="mailto:dhifullohdhiyaulhaq@gmail.com">dhifullohdhiyaulhaq@gmail.com</a></li>
+        <li>🔗 <a href="https://github.com/ulhaqdhifulloh" target="_blank">GitHub</a> ·
+               <a href="https://linkedin.com/in/ulhaqdhifulloh" target="_blank">LinkedIn</a> ·
+               <a href="https://youtube.com/@ulhaq25" target="_blank">YouTube</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Floating Chatbot -->
+  <button class="chat-fab" id="chat-fab" aria-label="Open chat">💬</button>
+  <div class="chat-panel" id="chat-panel" aria-live="polite">
+    <div class="chat-header">
+      <strong>Ask about Dhifulloh</strong>
+      <button id="close-chat" aria-label="Close chat">✕</button>
+    </div>
+    <div class="chat-body" id="chat-body">
+      <div class="msg bot">Hi! I’m an AI trained on Dhifulloh’s profile. Try questions below or ask anything.</div>
+      <div class="suggestions" id="suggestions"></div>
+    </div>
+    <form id="chat-form" class="chat-input">
+      <input id="chat-text" type="text" placeholder="Type your question…" maxlength="500" required />
+      <button class="btn btn-primary" type="submit">Send</button>
+    </form>
+    <div class="rate-info" id="rate-info"></div>
+  </div>
+
+  <script src="profileData.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
