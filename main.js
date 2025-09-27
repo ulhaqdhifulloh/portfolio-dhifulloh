@@ -1,5 +1,6 @@
 // ====== CONFIG ======
-const API_BASE_URL = "https://dhifulloh-portfolio-proxy.dhifulloh.workers.dev"; // Cloudflare Worker base OR Vercel base
+// const API_BASE_URL = "https://dhifulloh-portfolio-proxy.dhifulloh.workers.dev"; // Cloudflare Worker base OR Vercel base
+const API_BASE_URL = "https://portfolio-dhifulloh-backend.onrender.com/"; // Render base
 const DAILY_LIMIT = 40;            // hard cap per browser/day (client-side)
 const PER_MINUTE_LIMIT = 4;        // throttle per minute (client-side)
 // =====================
