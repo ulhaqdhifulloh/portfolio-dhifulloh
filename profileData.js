@@ -1,12 +1,11 @@
-// Ringkas profil & proyek untuk prompt sistem (sumber: portofolio PDF & CV).
-// Lihat "AI Enthusiast | Data Protection Intern..." dan "Key Projects" (PDF hlm 1 & 5),
-// serta ringkasan pengalaman (CV satu halaman). :contentReference[oaicite:2]{index=2} :contentReference[oaicite:3]{index=3}
+// Profil Data - Updated from LinkedIn (Dec 2025)
+// Source: https://linkedin.com/in/ulhaqdhifulloh
 window.__PROFILE__ = {
   basics: {
     name: "Dhifulloh Dhiya Ulhaq",
     pronouns: "He/Him",
-    title: "AI Enthusiast | Data Protection Intern at Telkom Indonesia | Bangkit Academy Graduate | IS Undergraduate",
-    location: "Bandung, West Java, Indonesia (from Purwokerto)",
+    title: "AI Enthusiast | Final-Year Information Systems Student at Telkom University | Bangkit Academy Graduate",
+    location: "Purwokerto, Central Java, Indonesia",
     email: "dhifullohdhiyaulhaq@gmail.com",
     links: {
       github: "https://github.com/ulhaqdhifulloh",
@@ -14,32 +13,169 @@ window.__PROFILE__ = {
       youtube: "https://youtube.com/@ulhaq25"
     }
   },
-  summary: "Information Systems undergraduate at Telkom University focused on bridging business and tech. Passion in AI, trained via Bangkit (ML) plus various AI bootcamps. Practical experience in ML, data workflows, and AI automation. Committed to building socially impactful AI.",
-  skillsTop: ["Artificial Intelligence (AI)","Machine Learning","Data Science","Prompt Engineering","Concept Generation"],
+
+  summary: "A final-year Information Systems student at Telkom University with a strong focus on AI development and Data Science. Experience includes being a Data Protection Intern at Telkom Indonesia, where I built an AI agent-based chatbot (Teman PDP) using RAG and n8n. Graduate of Bangkit Academy 2024 (Machine Learning cohort) and member of the Enterprise Data Management (EDM) Laboratory, specializing in AI model development, deep learning, and data-driven solutions.",
+
+  // Statistics for animated counters
+  stats: {
+    gpa: 3.8,
+    totalSkills: 63,
+    certifications: 19,
+    projects: 10,
+    experience: 10
+  },
+
+  skillsTop: [
+    "Artificial Intelligence (AI)",
+    "Machine Learning",
+    "Data Science",
+    "Deep Learning",
+    "Prompt Engineering",
+    "Python",
+    "TensorFlow",
+    "PyTorch",
+    "FastAPI",
+    "n8n Automation",
+    "Computer Vision",
+    "NLP",
+    "SQL",
+    "Streamlit"
+  ],
+
   experience: [
-    {org:"Central Computer Improvement (CCI) — Telkom University", role:"Member, Data Research Division", period:"Jan 2025–Present", summary:"Exploration & implementation of DS/ML/DL projects."},
-    {org:"Telkom Indonesia (Data Protection Office)", role:"Intern — Data Protection (AI Automation)", period:"Jun 2025–Sep 2025", summary:"Contributed to Teman PDP LLM chatbot; policy drafting, compliance audits, and awareness programs; strengthened understanding of data security & privacy."},
-    {org:"EDM Laboratory", role:"Member — Enterprise Data Management Study Group", period:"Jan 2025–Jul 2025", summary:"Applied data science to information systems projects."},
-    {org:"ERP Laboratory", role:"Member — ERP Study Group", period:"Feb 2025–Mar 2025", summary:"Learned Odoo modules (Inventory, Purchasing, Mfg, Sales)."},
-    {org:"Bangkit Academy", role:"Machine Learning Cohort", period:"Sep 2024–Jan 2025", summary:"Completed cross-disciplinary ML projects (Python/TensorFlow)."},
-    {org:"EAD Laboratory", role:"OOP Practicum Assistant", period:"Aug 2024–Dec 2024", summary:"Supported OOP labs; authored modules; Java."}
+    {
+      org: "Central Computer Improvement (CCI) — Telkom University",
+      role: "Member, Data Research Division",
+      period: "Jan 2025 – Present",
+      summary: "Exploration & implementation of data science, machine learning, and deep learning projects. Collaborating with team members on cutting-edge AI research initiatives."
+    },
+    {
+      org: "Telkom Indonesia (DPO Office)",
+      role: "Data Protection Intern — AI Automation",
+      period: "Jun 2025 – Sep 2025",
+      summary: "Developed 'Teman PDP', an LLM-based chatbot for Indonesia's Personal Data Protection Law using RAG, n8n, and OpenAI. Contributed to policy drafting, compliance audits, and awareness programs."
+    },
+    {
+      org: "EDM Laboratory — Telkom University",
+      role: "Laboratory Member",
+      period: "Jan 2025 – Jul 2025",
+      summary: "Applied data science methodologies to information systems projects. Developed 'PROSPEKTA' - Branch Performance Insight Platform using Random Forest classification."
+    },
+    {
+      org: "ERP Laboratory — Telkom University",
+      role: "ERP Study Group Member",
+      period: "Feb 2025 – Mar 2025",
+      summary: "Learned and applied Odoo ERP modules including Inventory, Purchasing, Manufacturing, and Sales management systems."
+    },
+    {
+      org: "Bangkit Academy (Google, Tokopedia, Gojek, Traveloka)",
+      role: "Machine Learning Cohort",
+      period: "Sep 2024 – Jan 2025",
+      summary: "Intensive training in Machine Learning, Deep Learning, and TensorFlow. Completed cross-disciplinary ML projects with industry mentors."
+    },
+    {
+      org: "Bangkit Academy — Capstone Project",
+      role: "Project Manager & ML Engineer",
+      period: "Oct 2024 – Dec 2024",
+      summary: "Led development of 'MoneySense' - an accessibility app for visually impaired users to detect Indonesian currency authenticity and denominations using CNN/TensorFlow."
+    },
+    {
+      org: "EAD Laboratory — Telkom University",
+      role: "OOP Practicum Assistant",
+      period: "Aug 2024 – Dec 2024",
+      summary: "Supported Object-Oriented Programming practical sessions. Authored lab modules and guided students in Java programming fundamentals."
+    }
   ],
+
   projects: [
-    {name:"Teman PDP", blurb:"LLM chatbot hub for Indonesia’s PDP Law; built with n8n/OpenAI/Pinecone; Telegram & web demo.", tags:["LLM","RAG","Privacy"], year:2025},
-    {name:"FinSight AI", blurb:"AI financial management & inclusive investment platform (BI-OJK Hackathon).", tags:["AI Agents","Automation"], year:2025},
-    {name:"WARM THE HACK — Tokopedia Reviews", blurb:"IndoBERT fine-tuning; 93% acc / 90.77 F1; Streamlit dashboard.", tags:["NLP","BERT"], year:2025},
-    {name:"Diabetes Risk & Segmentation", blurb:"LogReg + K-Means; Streamlit dashboard.", tags:["Data Mining","Healthcare"], year:2025},
-    {name:"PROSPEKTA", blurb:"Random Forest classifies coffee shops by performance; Streamlit.", tags:["ML","Analytics"], year:2025},
-    {name:"MoneySense", blurb:"CNN/TensorFlow detects banknote denomination & authenticity for visually impaired.", tags:["CV","Accessibility"], year:2024}
+    {
+      name: "Teman PDP",
+      blurb: "LLM-powered chatbot hub for Indonesia's Personal Data Protection Law. Built with n8n, OpenAI, Pinecone RAG. Deployed on Telegram & web demo.",
+      tags: ["LLM", "RAG", "n8n", "Privacy Tech"],
+      year: 2025,
+      highlight: true
+    },
+    {
+      name: "FinSight AI",
+      blurb: "AI-powered financial management and inclusive investment platform. Finalist at BI-OJK Hackfest 2025.",
+      tags: ["AI Agents", "Automation", "FinTech"],
+      year: 2025,
+      highlight: true
+    },
+    {
+      name: "Student Mental Health Risk Classifier",
+      blurb: "End-to-end ML pipeline to predict depression risk among students. Deployed via Streamlit dashboard.",
+      tags: ["Machine Learning", "Healthcare", "Streamlit"],
+      year: 2025,
+      highlight: false
+    },
+    {
+      name: "Face Emotion Detection System",
+      blurb: "Real-time emotion detection using CNN (ResNet18) in PyTorch with FastAPI backend and video processing.",
+      tags: ["Computer Vision", "PyTorch", "FastAPI"],
+      year: 2025,
+      highlight: true
+    },
+    {
+      name: "WARM THE HACK — Tokopedia Reviews",
+      blurb: "Sentiment analysis using IndoBERT fine-tuning. Achieved 93% accuracy / 90.77 F1 score with Streamlit dashboard.",
+      tags: ["NLP", "BERT", "Sentiment Analysis"],
+      year: 2025,
+      highlight: true
+    },
+    {
+      name: "PROSPEKTA",
+      blurb: "Random Forest classifier for coffee shop branch performance prediction. Interactive Streamlit analytics dashboard.",
+      tags: ["ML Classification", "Analytics", "Streamlit"],
+      year: 2025,
+      highlight: false
+    },
+    {
+      name: "Diabetes Risk & Segmentation",
+      blurb: "Logistic Regression + K-Means clustering for diabetes risk assessment. Healthcare analytics with Streamlit.",
+      tags: ["Data Mining", "Healthcare", "Clustering"],
+      year: 2025,
+      highlight: false
+    },
+    {
+      name: "MoneySense",
+      blurb: "CNN/TensorFlow app detecting Indonesian banknote denomination & authenticity for visually impaired users. Bangkit Capstone Project.",
+      tags: ["Computer Vision", "TensorFlow", "Accessibility"],
+      year: 2024,
+      highlight: true
+    }
   ],
-  education: {school:"Telkom University", program:"B.Sc. Information Systems (GPA 3.82)", years:"2022–2026"},
-  certs: ["Dev Certified for Machine Learning with TensorFlow (dev.id, 2025–2028)","Bangkit 2024 ML Graduate","Udemy — AI Automation: LLM Apps & Agents with n8n (2025)"],
-  // Suggested questions shown as pills:
+
+  education: {
+    school: "Telkom University",
+    program: "B.Sc. Information Systems",
+    gpa: "3.8 / 4.0",
+    years: "2022 – 2026 (Expected)"
+  },
+
+  certs: [
+    "Associate Data Scientist Training — KSS Consulting (2025)",
+    "Azure AI Fundamentals — Microsoft (2025)",
+    "Dev Certified for Machine Learning with TensorFlow (2025-2028)",
+    "Bangkit 2024 Machine Learning Graduate",
+    "AI Automation: LLM Apps & Agents with n8n — Udemy (2025)",
+    "English Proficiency Test (EPrT) Score: 513 (CEFR B1)"
+  ],
+
+  // Typing effect headlines
+  typingTexts: [
+    "Building AI that bridges business and tech.",
+    "Data Protection & Privacy Enthusiast.",
+    "Machine Learning Engineer in the making.",
+    "Creating impactful AI solutions."
+  ],
+
+  // Suggested questions for chatbot
   suggestions: [
     "Apa itu proyek Teman PDP dan peranku di sana?",
     "Highlight proyek ML/NLP terbaikmu?",
     "Skill apa yang paling kuat dan contoh penerapannya?",
     "Kenapa tertarik di AI privacy & compliance?",
-    "Rencana karier 1–2 tahun ke depan?"
+    "Rencana karier 1-2 tahun ke depan?"
   ]
 };

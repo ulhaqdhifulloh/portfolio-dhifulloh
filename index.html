@@ -1,20 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Dhifulloh Dhiya Ulhaq — Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <meta name="theme-color" content="#0b0b0b">
+  <title>Dhifulloh Dhiya Ulhaq — AI & ML Portfolio</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description"
+    content="Dhifulloh Dhiya Ulhaq - AI Enthusiast, Machine Learning Engineer, and Data Scientist. Final-year Information Systems student at Telkom University. Bangkit Academy 2024 Graduate." />
+  <meta name="keywords"
+    content="Dhifulloh Dhiya Ulhaq, AI, Machine Learning, Data Science, Portfolio, Telkom University, Bangkit Academy" />
+  <meta name="author" content="Dhifulloh Dhiya Ulhaq" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Dhifulloh Dhiya Ulhaq — AI & ML Portfolio" />
+  <meta property="og:description"
+    content="AI Enthusiast | Final-Year IS Student at Telkom University | Bangkit Academy Graduate" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ulhaqdhifulloh.github.io/portfolio-dhifulloh/" />
+  <meta property="og:image" content="assets/avatar.png" />
+
+  <!-- Theme Color -->
+  <meta name="theme-color" content="#0b0b0b" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css?v=2" />
+
+  <!-- Preconnect for Performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 </head>
+
 <body>
+  <!-- Header -->
   <header class="site-header">
     <div class="container">
       <div class="brand">
-        <img src="assets/avatar.png" alt="Dhifulloh" class="avatar">
+        <img src="assets/avatar.png" alt="Dhifulloh Dhiya Ulhaq" class="avatar" />
         <div>
           <h1>Dhifulloh Dhiya Ulhaq</h1>
-          <p class="tagline">AI Enthusiast · Data Protection Intern · Bangkit Graduate</p>
+          <p class="tagline">AI Enthusiast · ML Engineer · Bangkit Graduate</p>
         </div>
       </div>
       <nav>
@@ -22,58 +49,117 @@
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">☀️</button>
       </nav>
     </div>
   </header>
 
+  <!-- Hero Section with Particles -->
   <section class="hero">
+    <canvas id="particles-canvas"></canvas>
     <div class="container">
-      <h2>Building AI that bridges business and tech.</h2>
-      <p>IS undergraduate at Telkom University · Bandung, Indonesia</p>
+      <h2><span id="typing-text" class="typing-text">Building AI that bridges business and tech.</span></h2>
+      <p>🎓 Final-Year Information Systems Student at Telkom University</p>
+      <p>📍 Purwokerto, Central Java, Indonesia</p>
       <div class="cta">
-        <a class="btn btn-primary" href="#projects">See Projects</a>
-        <a class="btn btn-ghost" id="open-chat">Ask my AI about me →</a>
+        <a class="btn btn-primary" href="#projects">🚀 See My Projects</a>
+        <a class="btn btn-ghost" id="open-chat">💬 Ask my AI about me →</a>
+        <a class="btn btn-ghost" href="https://linkedin.com/in/ulhaqdhifulloh" target="_blank">🔗 LinkedIn</a>
       </div>
     </div>
   </section>
 
+  <!-- Stats Section -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item animate-on-scroll">
+          <div class="stat-number" data-counter="3.8" data-decimal="true" data-suffix="/4.0">0</div>
+          <div class="stat-label">GPA</div>
+        </div>
+        <div class="stat-item animate-on-scroll animate-delay-1">
+          <div class="stat-number" data-counter="63" data-suffix="+">0</div>
+          <div class="stat-label">Skills</div>
+        </div>
+        <div class="stat-item animate-on-scroll animate-delay-2">
+          <div class="stat-number" data-counter="19">0</div>
+          <div class="stat-label">Certifications</div>
+        </div>
+        <div class="stat-item animate-on-scroll animate-delay-3">
+          <div class="stat-number" data-counter="10" data-suffix="+">0</div>
+          <div class="stat-label">Projects</div>
+        </div>
+        <div class="stat-item animate-on-scroll animate-delay-4">
+          <div class="stat-number" data-counter="10">0</div>
+          <div class="stat-label">Experiences</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
   <main>
     <section id="about" class="section container"></section>
     <section id="experience" class="section container"></section>
     <section id="projects" class="section container"></section>
 
+    <!-- Contact Section -->
     <section id="contact" class="section container">
-      <h3>Contact</h3>
-      <ul class="list">
-        <li>📧 <a href="mailto:dhifullohdhiyaulhaq@gmail.com">dhifullohdhiyaulhaq@gmail.com</a></li>
-        <li>🔗 <a href="https://github.com/ulhaqdhifulloh" target="_blank">GitHub</a> ·
-               <a href="https://linkedin.com/in/ulhaqdhifulloh" target="_blank">LinkedIn</a> ·
-               <a href="https://youtube.com/@ulhaq25" target="_blank">YouTube</a></li>
-      </ul>
+      <h3>Get In Touch</h3>
+      <div class="card animate-on-scroll" style="text-align: center; padding: 40px;">
+        <p style="font-size: 1.1rem; margin-bottom: 24px; color: var(--text-secondary);">
+          Interested in collaborating on AI/ML projects or just want to say hi?<br />
+          Feel free to reach out!
+        </p>
+        <p style="font-size: 1.25rem; margin-bottom: 24px;">
+          📧 <a href="mailto:dhifullohdhiyaulhaq@gmail.com">dhifullohdhiyaulhaq@gmail.com</a>
+        </p>
+        <div class="social-links">
+          <a href="https://github.com/ulhaqdhifulloh" target="_blank" class="social-link" title="GitHub">
+            <span>💻</span>
+          </a>
+          <a href="https://linkedin.com/in/ulhaqdhifulloh" target="_blank" class="social-link" title="LinkedIn">
+            <span>💼</span>
+          </a>
+          <a href="https://youtube.com/@ulhaq25" target="_blank" class="social-link" title="YouTube">
+            <span>🎬</span>
+          </a>
+        </div>
+      </div>
     </section>
   </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>
+      © 2025 Dhifulloh Dhiya Ulhaq. Built with ❤️ and AI.
+      <br />
+      <a href="https://github.com/ulhaqdhifulloh/portfolio-dhifulloh" target="_blank">View Source on GitHub</a>
+    </p>
+  </footer>
 
   <!-- Floating Chatbot -->
   <button class="chat-fab" id="chat-fab" aria-label="Open chat">💬</button>
   <div class="chat-panel" id="chat-panel" aria-live="polite">
     <div class="chat-header">
-      <strong>Ask about Dhifulloh</strong>
+      <strong>🤖 Ask about Dhifulloh</strong>
       <button id="close-chat" aria-label="Close chat">✕</button>
     </div>
     <div class="chat-body" id="chat-body">
-      <div class="msg bot">Hi! I’m an AI trained on Dhifulloh’s profile. Try questions below or ask anything.</div>
+      <div class="msg bot">Hi! I'm an AI trained on Dhifulloh's profile. Ask me anything about his skills, projects, or
+        experience!</div>
       <div class="suggestions" id="suggestions"></div>
     </div>
     <form id="chat-form" class="chat-input">
-      <input id="chat-text" type="text" placeholder="Type your question…" maxlength="500" required />
+      <input id="chat-text" type="text" placeholder="Type your question…" maxlength="500" required autocomplete="off" />
       <button class="btn btn-primary" type="submit">Send</button>
     </form>
     <div class="rate-info" id="rate-info"></div>
   </div>
 
-  <!-- <script src="profileData.js"></script>
-  <script src="main.js"></script> -->
-  <script src="profileData.js?v=1"></script>
-  <script src="main.js?v=1"></script>
+  <!-- Scripts -->
+  <script src="profileData.js?v=2"></script>
+  <script src="main.js?v=2"></script>
 </body>
+
 </html>
