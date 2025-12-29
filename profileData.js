@@ -4,7 +4,7 @@ window.__PROFILE__ = {
   basics: {
     name: "Dhifulloh Dhiya Ulhaq",
     pronouns: "He/Him",
-    title: "AI Enthusiast | Final-Year Information Systems Student at Telkom University | Bangkit Academy Graduate",
+    title: "AI Engineer & SaaS Developer | Associate Data Scientist (BNSP) & TensorFlow Certified | Bangkit Academy Graduate | Final-Year Information Systems Student at Telkom University",
     location: "Purwokerto, Central Java, Indonesia",
     email: "dhifullohdhiyaulhaq@gmail.com",
     links: {
@@ -14,7 +14,7 @@ window.__PROFILE__ = {
     }
   },
 
-  summary: "A final-year Information Systems student at Telkom University with a strong focus on AI development and Data Science. Experience includes being a Data Protection Intern at Telkom Indonesia, where I built an AI agent-based chatbot (Teman PDP) using RAG and n8n. Graduate of Bangkit Academy 2024 (Machine Learning cohort) and member of the Enterprise Data Management (EDM) Laboratory, specializing in AI model development, deep learning, and data-driven solutions.",
+  summary: "A final-year Information Systems student and Bangkit Academy graduate who bridges the gap between advanced Data Science and scalable SaaS engineering. Certified as a BNSP Associate Data Scientist and TensorFlow Developer. Experience includes engineering RAG-based AI agents and workflow automations, with a current focus on building integrated web platforms and end-to-end software solutions.",
 
   // Statistics for animated counters
   stats: {
@@ -26,12 +26,17 @@ window.__PROFILE__ = {
   },
 
   skillsTop: [
-    "Artificial Intelligence (AI)",
-    "Machine Learning",
+    "AI Engineer",
+    "SaaS Development",
     "Data Science",
+    "Machine Learning",
     "Deep Learning",
-    "Prompt Engineering",
+    "Generative AI",
     "Python",
+    "Laravel",
+    "Inertia.js",
+    "React.js",
+    "Vector Databases",
     "TensorFlow",
     "PyTorch",
     "FastAPI",
@@ -88,6 +93,20 @@ window.__PROFILE__ = {
   ],
 
   projects: [
+    {
+      name: "KORELASI",
+      blurb: "Integrated Professional Networking SaaS Platform. Built with Laravel, Inertia, React, and RBAC.",
+      tags: ["SaaS", "Laravel", "Inertia.js", "React", "RBAC"],
+      year: 2025,
+      highlight: true
+    },
+    {
+      name: "Cattle Body Scoring",
+      blurb: "Automated Cattle Body Condition Scoring System using Computer Vision.",
+      tags: ["Computer Vision", "AI", "Automation"],
+      year: 2025,
+      highlight: true
+    },
     {
       name: "Teman PDP",
       blurb: "LLM-powered chatbot hub for Indonesia's Personal Data Protection Law. Built with n8n, OpenAI, Pinecone RAG. Deployed on Telegram & web demo.",
