@@ -4,20 +4,20 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Dhifulloh Dhiya Ulhaq — AI Engineer & SaaS Developer</title>
+  <title>Dhifulloh Dhiya Ulhaq — Backend Engineer & Full-Stack Developer</title>
 
   <!-- SEO Meta Tags -->
   <meta name="description"
-    content="Dhifulloh Dhiya Ulhaq - AI Engineer, SaaS Developer, and Associate Data Scientist. Final-year Information Systems student at Telkom University. Bangkit Academy Graduate." />
+    content="Dhifulloh Dhiya Ulhaq - Backend Engineer at Phillip Sekuritas Indonesia, Freelance Full-Stack Engineer, Bangkit Academy Graduate. Information Systems student at Telkom University specializing in NestJS, React, AWS, and AI-driven solutions." />
   <meta name="keywords"
-    content="Dhifulloh Dhiya Ulhaq, AI Engineer, SaaS Developer, Machine Learning, Data Science, Portfolio, Telkom University, Bangkit Academy" />
+    content="Dhifulloh Dhiya Ulhaq, Backend Engineer, Full-Stack Developer, NestJS, React, TypeScript, AWS, SaaS Developer, Machine Learning, Data Science, Portfolio, Telkom University, Bangkit Academy, KORELASI, Teman PDP" />
   <meta name="author" content="Dhifulloh Dhiya Ulhaq" />
   <meta name="robots" content="index, follow" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Dhifulloh Dhiya Ulhaq — AI Engineer & SaaS Developer" />
+  <meta property="og:title" content="Dhifulloh Dhiya Ulhaq — Backend Engineer & Full-Stack Developer" />
   <meta property="og:description"
-    content="AI Engineer & SaaS Developer | Associate Data Scientist | Final-Year IS Student at Telkom University" />
+    content="Backend Engineer @ Phillip Sekuritas | Freelance Full-Stack Engineer | Bangkit Academy Graduate | Information Systems — Telkom University" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://ulhaqdhifulloh.github.io/portfolio-dhifulloh/" />
   <meta property="og:image" content="assets/avatar.png" />
@@ -26,11 +26,51 @@
   <meta name="theme-color" content="#0b0b0b" />
 
   <!-- Styles -->
-  <link rel="stylesheet" href="style.css?v=2" />
+  <link rel="stylesheet" href="style.css?v=5" />
 
   <!-- Preconnect for Performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <style>
+    /* Direct inline overrides to completely bypass browser caching & protocol constraints */
+    .msg-suggestions {
+      display: flex !important;
+      flex-wrap: wrap !important;
+      gap: 8px !important;
+      margin-top: 8px !important;
+      margin-bottom: 12px !important;
+      animation: fadeIn 0.3s ease !important;
+      align-self: flex-start !important;
+      max-width: 95% !important;
+    }
+    
+    .msg-suggestions button {
+      background: var(--panel-hover) !important;
+      border: 1px solid var(--ring) !important;
+      border-radius: 20px !important;
+      padding: 8px 14px !important;
+      color: var(--text-secondary) !important;
+      font-size: 0.8rem !important;
+      cursor: pointer !important;
+      transition: all var(--transition-fast) !important;
+      text-align: left !important;
+      white-space: normal !important; /* Allow natural wrap for longer text inside buttons */
+    }
+    
+    .msg-suggestions button:hover {
+      background: var(--orange) !important;
+      color: #111 !important;
+      border-color: var(--orange) !important;
+    }
+    
+    /* Force light theme hero background image to cover screen fully */
+    [data-theme="light"] .hero {
+      background-size: cover !important;
+      background-position: center center !important;
+      background-repeat: no-repeat !important;
+    }
+  </style>
 </head>
 
 <body>
@@ -41,7 +81,7 @@
         <img src="assets/avatar.png" alt="Dhifulloh Dhiya Ulhaq" class="avatar" />
         <div>
           <h1>Dhifulloh Dhiya Ulhaq</h1>
-          <p class="tagline">AI Engineer · SaaS Developer · Data Scientist</p>
+          <p class="tagline">Backend Engineer · Full-Stack Developer · Data Scientist</p>
         </div>
       </div>
       <nav>
@@ -58,7 +98,7 @@
   <section class="hero">
     <canvas id="particles-canvas"></canvas>
     <div class="container">
-      <h2><span id="typing-text" class="typing-text">Building AI that bridges business and tech.</span></h2>
+      <h2><span id="typing-text" class="typing-text"></span></h2>
       <p>🎓 Final-Year Information Systems Student at Telkom University</p>
       <p>📍 Purwokerto, Central Java, Indonesia</p>
       <div class="cta">
@@ -132,7 +172,7 @@
   <!-- Footer -->
   <footer>
     <p>
-      © 2025 Dhifulloh Dhiya Ulhaq. Built with ❤️ and AI.
+      © 2026 Dhifulloh Dhiya Ulhaq. Built with ❤️ and AI.
       <br />
       <a href="https://github.com/ulhaqdhifulloh/portfolio-dhifulloh" target="_blank">View Source on GitHub</a>
     </p>
@@ -146,9 +186,6 @@
       <button id="close-chat" aria-label="Close chat">✕</button>
     </div>
     <div class="chat-body" id="chat-body">
-      <div class="msg bot">Hi! I'm an AI trained on Dhifulloh's profile. Ask me anything about his skills, projects, or
-        experience!</div>
-      <div class="suggestions" id="suggestions"></div>
     </div>
     <form id="chat-form" class="chat-input">
       <input id="chat-text" type="text" placeholder="Type your question…" maxlength="500" required autocomplete="off" />
@@ -158,8 +195,14 @@
   </div>
 
   <!-- Scripts -->
-  <script src="profileData.js?v=2"></script>
-  <script src="main.js?v=2"></script>
+  <script src="profileData.js?v=5"></script>
+  <script src="js/modules/theme.js?v=5"></script>
+  <script src="js/modules/typewriter.js?v=5"></script>
+  <script src="js/modules/particles.js?v=5"></script>
+  <script src="js/modules/counter.js?v=5"></script>
+  <script src="js/modules/scroll.js?v=5"></script>
+  <script src="js/modules/chat.js?v=5"></script>
+  <script src="js/main.js?v=5"></script>
 </body>
 
 </html>
